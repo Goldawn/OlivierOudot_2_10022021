@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #0065FC;
+  --secondary-color: #DEEBFF;
+  --main-bg-color: #F2F2F2;
+}
+
 * {
   font-family: 'Raleway', sans-serif;
   padding: 0;
@@ -43,7 +49,7 @@ li a {
   margin-top: 20px;
 }
 
-#search_bar > *{
+#search_bar > * {
   height: 48px;
 }
 
@@ -65,8 +71,8 @@ input {
 #search_section button {
   height: 50px;
   width: 135px;
-  background-color: rgb(11, 98, 212);
-  border: 1px solid  rgb(11, 98, 212);
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   color: white;
   border-radius:  0 10px 10px 0;
   font-size: 1.1em;
@@ -86,7 +92,7 @@ input {
 .filter_tag {
   margin: 15px;
   height: 46px;
-  border: 2px solid rgb(207, 207, 207);
+  border: 2px solid var(--main-bg-color);
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -106,12 +112,12 @@ input {
   height: 50px;
   font-size: 1.4em;
   border-radius: 50%;
-  background-color: rgba(172, 215, 255, 1);
-  color: rgba(11, 98, 212, 0.993);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 #search_section p:nth-last-child(1) i {
-  color: rgba(11, 98, 212, 0.993);
+  color: var(--primary-color);
   border: 1px solid #e5e5e5;
   border-radius: 50%;
   width: 25px;
@@ -130,7 +136,7 @@ input {
 }
 
 .grey_bg {
-  background-color:#F2F2F2;
+  background-color: var(--main-bg-color);
   border-radius: 20px;
 }
 
