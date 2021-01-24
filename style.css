@@ -32,16 +32,38 @@ nav {
 
 nav ul {
   display: flex;
+  width: 420px;
+  height: 100%;
 }
 
 li
 {
+  text-align: center;
   list-style-type: none;
-  margin-left: 65px;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 li a {
   text-decoration: none;
+  color: black;
+}
+
+li:hover {
+  border-top: 3px solid var(--primary-color);
+}
+
+li:hover a {
+  color: var(--primary-color);
+}
+
+#search_section h3 {
+  font-weight: 400;
+  font-size: 1em;
+  margin-top: 5px;
 }
 
 #search_bar {
@@ -98,6 +120,19 @@ input {
   align-items: center;
 }
 
+.filter_tag:hover .filter_ico {
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow:  7px 0px 4px -4px #ffffff;
+}
+
+.filter_tag:hover {
+  border: 2px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: black;
+  box-shadow:  3px 7px 11px -4px #c8c8c8;
+}
+
 .filter_tag p:nth-last-child(1) {
   font-weight: 700;
   padding: 10px 20px 10px 10px;
@@ -110,7 +145,7 @@ input {
   transform: translateX(-2px);
   width: 50px;
   height: 50px;
-  font-size: 1.4em;
+  font-size: 1.3em;
   border-radius: 50%;
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -208,6 +243,14 @@ input {
 
 .d_v_c_bot p:nth-child(2) {
   font-size: 0.85em;
+}
+
+.fa-star {
+  color: var(--main-bg-color);
+}
+
+.full_star {
+  color: var(--primary-color);
 }
 
 aside {
