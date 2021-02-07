@@ -19,7 +19,6 @@
     <header>
       <nav>
         <div>
-          <h1>Reservia</h1>
           <img src="../Reservia/images/logo/Reservia.svg" alt="Reservia logo">
         </div>
         <ul>
@@ -33,32 +32,34 @@
 
     <main> 
       <section id="search_section">
-        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <h3>En plein centre ville ou en pleine nature</h3>
         <div id="search_bar">
           <div id="search_bar_ico"><i class="fas fa-map-marker-alt"></i></div>
-          <input type="text">
+          <input type="text" placeholder="Marseille, France">
           <button>Rechercher</button>
         </div>
 
         <div id="filter_bar">
           <h2>Filtres</h2>
-          <div class="filter_tag">
-            <p class="filter_ico"><i class="fas fa-money-bill-wave"></i></p>
-            <p>Economique</p>
-          </div>
-          <div class="filter_tag">
-            <p class="filter_ico"><i class="fas fa-child"></i></p>
-            <p>Familial</p>
-          </div>
-          <div class="filter_tag">
-            <p class="filter_ico"><i class="fas fa-heart"></i></p>
-            <p>Romantique</p>
-          </div>
-          <div class="filter_tag">
-            <p class="filter_ico"><i class="fas fa-dog"></i></p>
-            <p>Animaux autorisés</p>
-          </div>
+          <div id="tag_bar">
+            <div class="filter_tag">
+              <p class="filter_ico"><i class="fas fa-money-bill-wave"></i></p>
+              <p>Economique</p>
+            </div>
+            <div class="filter_tag">
+              <p class="filter_ico"><i class="fas fa-child"></i></p>
+              <p>Familial</p>
+            </div>
+            <div class="filter_tag">
+              <p class="filter_ico"><i class="fas fa-heart"></i></p>
+              <p>Romantique</p>
+            </div>
+            <div class="filter_tag">
+              <p class="filter_ico"><i class="fas fa-dog"></i></p>
+              <p>Animaux autorisés</p>
+            </div>
+          </div>          
         </div>
 
         <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -72,19 +73,19 @@
             <div id="align_left">
               <div id="detailed_vert_card_container">
                 <a class="margin_bot" href="">
-                  <div class="detailed_vert_card">
-                    <div class="d_v_c_top">
+                  <article class="detailed_vert_card">
+                    <picture class="d_v_c_top">
                       <img src="../Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
-                    </div>
+                    </picture>
                     <div class="d_v_c_bot">
                       <p>Auberge la Cannebière</p>
                       <p>Nuit à partir de <span>25€</span></p>
                       <p><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="fas fa-star"></i></p>
                     </div>
-                  </div>
+                  </article>
                 </a>
                 <a class="margin_bot" href="">
-                  <div class="detailed_vert_card">
+                  <article class="detailed_vert_card">
                     <div class="d_v_c_top">
                       <img src="../Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
                     </div>
@@ -93,10 +94,10 @@
                       <p>Nuit à partir de <span>52€</span></p>
                       <p><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i></p>
                     </div>
-                  </div>
+                  </article>
                 </a>
                 <a class="margin_bot" href="">
-                  <div class="detailed_vert_card">
+                  <article class="detailed_vert_card">
                     <div class="d_v_c_top">
                       <img src="../Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
                     </div>
@@ -105,10 +106,10 @@
                       <p>Nuit à partir de <span>76€</span></p>
                       <p><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="fas fa-star"></i></p>
                     </div>
-                  </div>
+                  </article>
                 </a>
                 <a class="margin_bot" href="">
-                  <div class="detailed_vert_card">
+                  <article class="detailed_vert_card">
                     <div class="d_v_c_top">
                       <img src="../Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                     </div>
@@ -117,10 +118,10 @@
                       <p>Nuit à partir de <span>46€</span></p>
                       <p><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     </div>
-                  </div>
+                  </article>
                 </a>
                 <a class="margin_bot" href="">
-                  <div class="detailed_vert_card">
+                  <article class="detailed_vert_card">
                     <div class="d_v_c_top">
                       <img src="../Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
                     </div>
@@ -129,10 +130,10 @@
                       <p>Nuit à partir de <span>23€</span></p>
                       <p><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="fas fa-star"></i></p>
                     </div>
-                  </div>
+                  </article>
                 </a>
                 <a class="margin_bot" href="">
-                  <div class="detailed_vert_card">
+                  <article class="detailed_vert_card">
                     <div class="d_v_c_top">
                       <img src="../Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                     </div>
@@ -141,7 +142,7 @@
                       <p>Nuit à partir de <span>96€</span></p>
                       <p><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i></p>
                     </div>
-                  </div>
+                  </article>
                 </a>
               </div>
               <a href="">Afficher plus</a>
@@ -157,7 +158,7 @@
             </div>
             <div id="detailed_hor_card_container">
               <a href="">
-                <div class="detailed_hor_card">
+                <article class="detailed_hor_card">
                   <div class="d_h_c_left">
                     <img src="../Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                   </div>
@@ -170,10 +171,10 @@
                       <p><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i></p>
                     </div>
                   </div>
-                </div>
+                </article>
               </a>
               <a href="">
-                <div class="detailed_hor_card">
+                <article class="detailed_hor_card">
                   <div class="d_h_c_left">
                     <img src="../Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
                   </div>
@@ -186,10 +187,10 @@
                       <p><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="fas fa-star"></i></p>
                     </div>
                   </div>
-                </div>
+                </article>
               </a>
               <a href="">
-                <div class="detailed_hor_card">
+                <article class="detailed_hor_card">
                   <div class="d_h_c_left">
                     <img src="../Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
                   </div>
@@ -202,7 +203,7 @@
                       <p><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="full_star fas fa-star"></i><i class="fas fa-star"></i></p>
                     </div>
                   </div>
-                </div>
+                </article>
               </a>
             </div>
           </div>
@@ -215,46 +216,46 @@
         <div id="activity_container">
           <div class="vert_card_container">
             <a class ="full_height" href="">
-              <div class="full_height vert_card">
+              <article class="full_height vert_card">
                 <img src="../Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Fort de Pomègues">
                 <div class="vert_card_title"><h3>Vieux Port</h3></div>
-              </div>
+              </article>
             </a>
           </div>
           <div class="vert_card_container">
             <a class ="high_height" href="">
-              <div class="high_height vert_card">
+              <article class="high_height vert_card">
                 <img  class=imgstyle src="../Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                 <div class="vert_card_title"><h3>Fort de Pomègues</h3></div>
-              </div>
+              </article>
             </a>
             <a class ="low_height" href="">
-              <div class="low_height vert_card">
+              <article class="low_height vert_card">
                 <img class="imgstyle" src="../Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
                 <div class="vert_card_title"><h3>Îles du Frioul</h3></div>
-              </div>
+              </article>
             </a>
           </div>
           <div class="vert_card_container">
             <a class ="full_height" href="">
-              <div class="full_height vert_card">
+              <article class="full_height vert_card">
                 <img src="../Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
                 <div class="vert_card_title"><h3>Parc National des Calanques</h3></div>
-              </div>
+              </article>
             </a>
           </div>
           <div class="vert_card_container">
             <a class ="lower_height" href="">
-              <div class="lower_height vert_card">
+              <article class="lower_height vert_card">
                 <img class="imgstyle" src="../Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                 <div class="vert_card_title"><h3>Notre-Dame-de-la-Garde</h3></div>
-              </div>
+              </article>
             </a>
             <a class ="higher_height" href="">
-              <div class="higher_height vert_card">
+              <article class="higher_height vert_card">
                 <img class="imgstyle" src="../Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                 <div class="vert_card_title"><h3>Parc Longchamp</h3></div>
-              </div>
+              </article>
             </a>
           </div>
         </div>      
@@ -263,6 +264,7 @@
     </main>
 
   </div>
+
   <footer class="grey_bg">
     <div id="footer_margin">
       <div>

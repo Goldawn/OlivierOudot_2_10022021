@@ -6,6 +6,7 @@
 
 * {
   font-family: 'Raleway', sans-serif;
+  font-size: 100%;
   padding: 0;
   margin: 0;
 }
@@ -20,12 +21,18 @@ body {
   flex-direction: column;
 }
 
-h1 {
-  display:none;
-}
-
 #content {
   margin: auto;
+  width: 100%;
+  max-width: 1335px;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.3em;
 }
 
 /*
@@ -38,10 +45,6 @@ YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD
                                                           
                                                           
 */
-
-header, main {
-  width: 1335px;
-}
 
 nav {
   display: flex;
@@ -118,7 +121,21 @@ YP  YP  YP YP   YP Y888888P VP   V8P      `8888Y' Y88888P  `Y88P'    YP    Y8888
 
 input {
   border: 1px solid #e5e5e5;
-  width: 233px;
+  width: 223px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: black;
+}
+
+button:last-of-type {
+  display: none;
 }
 
 #search_section button {
@@ -140,15 +157,21 @@ input {
 
 #filter_bar h2 {
   font-size: 1.1em;
+  margin-right: 30px;
+}
+
+#tag_bar {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .filter_tag {
-  margin: 15px;
   height: 46px;
   border: 2px solid var(--main-bg-color);
   border-radius: 30px;
   display: flex;
   align-items: center;
+  margin-right: 25px;
 }
 
 .filter_tag:hover .filter_ico {
@@ -208,8 +231,9 @@ Y8b  d8 `8b  d8' 88 `88. 88.          88      88   88 88. ~8~ 88.
 #core_page {
   margin-top: 30px;
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: space-between;
-  height: 625px;
+  min-height: 625px;
 }
 
 .grey_bg {
@@ -219,7 +243,8 @@ Y8b  d8 `8b  d8' 88 `88. 88.          88      88   88 88. ~8~ 88.
 
 #core_left {
   /* width: clamp(65%, 875px, 100%); */
-  width: 875px;
+  width: 100%;
+  max-width: 875px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,11 +258,11 @@ Y8b  d8 `8b  d8' 88 `88. 88.          88      88   88 88. ~8~ 88.
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 550px;
+  min-height: 550px;
 }
 
 #align_left {
-  height: 470px;
+  min-height: 470px;
 }
 
 #detailed_vert_card_container {
@@ -331,6 +356,7 @@ aside {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 10px;
 }
 
 .aside_title_layout i {
@@ -339,13 +365,14 @@ aside {
 
 #detailed_hor_card_container {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   justify-content: space-between;
   height: 470px;
 }
 
 .detailed_hor_card {
-  width: 100%;
+  max-width: 100%;
+  width: 345px;
   height: 145px;
   background-color:#fff;
   border-radius: 25px;
@@ -354,7 +381,6 @@ aside {
 }
 
 .d_h_c_left {
-  /* background-color: rgb(166, 188, 218); */
   border-radius: 18px 0 0 18px;
   margin: 6px;
   width: 127px;
@@ -368,7 +394,6 @@ aside img {
 }
 
 .d_h_c_right {
-  /* background-color: rgb(218, 166, 188); */
   border-radius: 0 18px 18px 0;
   margin: 6px;
   padding: 10px 15px;
@@ -405,9 +430,10 @@ YP   YP  `Y88P'    YP    Y888888P    YP    Y888888P    YP       YP         `8888
 #activity_container{
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  height: 450px;
+  min-height: 450px;
 }
 
 .vert_card_container {
@@ -520,3 +546,306 @@ footer h3 {
 footer p {
   margin-bottom: 15px;
 }
+
+/* 
+.88b  d88. d88888b d8888b. d888888b  .d8b.        .d88b.  db    db d88888b d8888b. d888888b d88888b .d8888. 
+88'YbdP`88 88'     88  `8D   `88'   d8' `8b      .8P  Y8. 88    88 88'     88  `8D   `88'   88'     88'  YP 
+88  88  88 88ooooo 88   88    88    88ooo88      88    88 88    88 88ooooo 88oobY'    88    88ooooo `8bo.   
+88  88  88 88~~~~~ 88   88    88    88~~~88      88    88 88    88 88~~~~~ 88`8b      88    88~~~~~   `Y8b. 
+88  88  88 88.     88  .8D   .88.   88   88      `8P  d8' 88b  d88 88.     88 `88.   .88.   88.     db   8D 
+YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   YD Y888888P Y88888P `8888Y' 
+                                                                                                            
+                                                                                                            
+ */
+
+@media screen and ( max-width: 1294px) {
+
+  #core_left {
+    background-color: white;
+  }
+
+}
+
+@media screen and ( max-width: 1024px) {
+
+* {
+  font-size: 0.9rem;
+}
+
+.filter_tag p:nth-last-child(1) {
+  padding: 5px 15px 5px 5px;
+}
+
+nav, #search_section, #core_page, #activity_section, footer{
+  padding: 0 6%;
+}
+
+}
+
+@media screen and ( max-width: 768px) {
+
+  * {
+    font-size: 0.75rem;
+  }
+
+  nav ul {
+    width: 300px;
+  }
+
+ input {
+    width: 160px;
+  }
+
+  #search_section button {
+    width: 90px;
+  }
+ }
+
+ @media screen and ( max-width: 425px) {
+
+  header {
+    position: relative;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav div {
+    width: 100%;
+    padding-left: 8%;
+    padding-top: 20px;
+  }
+
+  nav ul {
+    width: 100%;
+    height: initial;
+  }
+
+  ul li {
+    border-bottom: 3px solid var(--main-bg-color);
+    padding-bottom: 10px;
+  }
+
+  ul li a {
+    font-size: 1.3rem;
+  }
+
+  ul li:last-of-type {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    height: 47px;
+    padding-right: 6%;
+    border: none;
+  }
+
+  ul li:last-of-type a {
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+
+  li:hover {
+    border-top: none;
+    border-bottom: 3px solid var(--primary-color);
+  }
+
+  #search_section {
+    padding: 0 6%;
+    font-size: 1.5em;
+    margin-top: 40px;
+  }
+
+  h1, h2 {
+    font-size: 1.8rem;
+  }
+
+  #search_section h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+
+  #search_section p, #search_section i{
+    font-size: 1.25rem;
+  } 
+
+  #search_section > p {
+    display: flex;
+  } 
+
+  #search_section p:nth-last-child(1) i {
+    width: 34px;
+  }
+
+  #search_bar {
+    width: 100%;
+  }
+
+  #search_bar_ico {
+    width: 15%;
+  }
+
+  #search_bar input {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+
+  #search_bar button {
+    width: 15%;
+    border-radius: 15px;
+  }
+
+  button:nth-last-child(2) {
+    display: none;
+  }
+
+  button:last-of-type {
+    display: inline-block;
+    margin-left: -10px;
+  }
+
+  #filter_bar h2 {
+    margin-right: 0;
+    font-size: 1.3em;
+  }
+
+  #filter_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .filter_tag {
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+
+  #detailed_vert_card_container a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detailed_vert_card {
+    width: 100%;
+  }
+
+  .bloc_align {
+    padding: 0 6%;
+  }
+
+  .grey_bg {
+    border-radius: 0;
+  }
+
+  .right_align {
+    width: 100%;
+    padding: 35px 6%;
+  }
+
+  #align_left {
+    margin-top: 20px;
+  }
+
+  .aside_title_layout h2{
+    font-size: 1.9rem;
+  }
+
+  .aside_title_layout i{
+    font-size: 2rem;
+  }
+
+  .d_h_c_title p, .d_h_c_title {
+    font-size: 1.3rem;
+  }
+
+  .d_h_c_title p span {
+    font-size: 1rem;
+  }
+
+  .star_rating i, .d_v_c_bot i{
+    font-size: 1rem;
+  }
+
+  #core_left {
+    margin-top: 35px;
+  }
+
+  #core_left h2, #activity_section h2{
+    font-size: 1.85rem;
+  }
+
+  #activity_container {
+    margin: 0;
+  }
+
+  #activity_section {
+    padding: 0 6%;
+  }
+
+  #activity_section img {
+    width: 100%;
+  }
+
+  .vert_card_container {
+    width: 100%;
+  }
+
+  .vert_card_container a, .high_height, .low_height, .higher_height, .lower_height {
+    height: 190px;
+  }
+
+  .vert_card_container a {
+    margin-top: 20px;
+  }
+
+  .vert_card_title h3 {
+    font-size: 1.35rem;
+  }
+
+  .d_v_c_bot p {
+    font-size: 1.3rem;
+  }
+
+  .d_v_c_bot p:nth-child(2), .d_v_c_bot p:nth-child(2) span{
+    font-size: 1.2rem;
+  }
+
+  #align_left > a:last-child {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  footer {
+    height: 100%;
+  }
+
+  #footer_margin {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 6%;
+  }
+
+  #footer_margin > div {
+    flex-direction: column;
+  }
+
+  footer section a{
+    font-size: 1.3rem;
+    line-height: 15px;
+  }
+
+  footer section h3 {
+    padding-top: 50px;
+  }
+  footer section h3 a{
+    font-size: 1.5rem;
+    line-height: 15px;
+  }
+
+}
+
