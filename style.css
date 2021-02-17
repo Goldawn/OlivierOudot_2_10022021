@@ -11,6 +11,10 @@
   margin: 0;
 }
 
+.fa-star {
+  font-size: 0.8rem;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -33,6 +37,10 @@ h1 {
 
 h2 {
   font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1em;
 }
 
 /*
@@ -75,6 +83,11 @@ li a {
   color: black;
 }
 
+nav ul li:last-child a {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
 li:hover {
   border-top: 3px solid var(--primary-color);
 }
@@ -111,8 +124,8 @@ YP  YP  YP YP   YP Y888888P VP   V8P      `8888Y' Y88888P  `Y88P'    YP    Y8888
 
 #search_bar_ico {
   width: 50px;
-  background-color: #e5e5e5;
-  border: 1px solid #e5e5e5;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 10px 0 0 10px;
   display: flex;
   justify-content: center;
@@ -299,8 +312,11 @@ Y8b  d8 `8b  d8' 88 `88. 88.          88      88   88 88. ~8~ 88.
 
 .box-hebergements_cards_legend {
   border-radius: 0 0 18px 18px;
-  margin: 6px;
+  margin: 0 6px 6px 6px;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .box-hebergements_cards_legend > * {
@@ -496,7 +512,6 @@ YP   YP  `Y88P'    YP    Y888888P    YP    Y888888P    YP       YP         `8888
 
 .activity_section_picture_title h3 {
   margin-left: 20px;
-  font-size: 1.1em;
 }
 
 /* 
@@ -729,8 +744,15 @@ aside, #box-hebergements_container>* {
     height: 27vw;
   }
 
+  #footer_margin > div {
+    flex: 1.2;
+  }
+
   #footer_margin div:nth-last-child(1) {
     flex: 0.8;
+  }
+  #footer_margin div:nth-last-child(1) section  {
+    margin-left: 20%;
   }
  }
 
@@ -785,6 +807,10 @@ aside, #box-hebergements_container>* {
   footer section h3 a{
     font-size: 1.2rem;
     line-height: 15px;
+  }
+
+  #footer_margin div:nth-last-child(1) section  {
+    margin-left: 0;
   }
 
 
